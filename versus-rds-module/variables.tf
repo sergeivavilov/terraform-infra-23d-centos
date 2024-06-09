@@ -1,7 +1,3 @@
-variable "greeting" {
-  description = "A greeting phrase"
-}
-
 ### RDS Variables
 variable "rds_name" {
   type = string
@@ -30,10 +26,6 @@ variable "rds_username" {
 variable "multi_az" {
   type = bool
 }
-
-# variable "rds_password" {
-#   type = string
-# }
 
 variable "rds_parameter_group_name" {
   type = string
@@ -81,7 +73,6 @@ variable "rds_sg_ingress_port" {
 variable "rds_sg_ingress_protocol" {
   type = string
 }
-
 
 variable "rds_sg_ingress_cidr_blocks" {
   type = list(string)
